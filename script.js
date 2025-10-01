@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     tdData.textContent = dataStr;
     tr.appendChild(tdData);
 
-    for (let i = 0; i < 14; i++) {
+    for (let i = 0; i < 13; i++) {
       const td = document.createElement("td");
       const checkbox = document.createElement("input");
       checkbox.type = "checkbox";
@@ -46,14 +46,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   atualizarResumo();
 
-  function atualizarTotal(tr, dataStr) {
-    const checkboxes = tr.querySelectorAll(".meta");
+  function atualizarTotal(tr) {
+    // pega apenas os checkboxes da linha, ignorando outras colunas
+    const checkboxes = tr.querySelectorAll("input.meta");
     let total = 0;
     checkboxes.forEach((cb) => {
       if (cb.checked) total++;
     });
-    tr.querySelector(".totalDia").textContent = total;
-
+    tr.querySelector(".totalDia").textContent = total; // atualiza só o total
     atualizarResumo();
   }
 

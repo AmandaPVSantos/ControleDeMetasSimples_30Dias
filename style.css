@@ -2,12 +2,26 @@ body {
   font-family: Arial, sans-serif;
   margin: 20px;
   text-align: center;
-  background-image: url('/img/background.png');
-  background-size:auto;     
-  background-position: center; 
-  background-repeat: no-repeat; 
+  background-color: #e1d2e8;
 }
 
+header {
+  background-image: url('/img/background2.jpg');
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat; 
+  height: 500px;      
+  
+
+}
+
+titulo {
+    margin: 0;            
+  padding: 7px;
+  position: relative;
+  top: -10px;          
+  font-size: 30px;
+}
 
 table {
   border-collapse: collapse;
@@ -17,14 +31,15 @@ table {
 
 th, td {
   border: 1px solid #1a1919;
-  color: white;
+  color: black;
+  font-weight: bold;
   padding: 6px;
   text-align: center;
 }
 
 th, header, .resumo {
-  background-color: #a98e8e;
-  color: white;
+  background-color: #ab9292;
+  color: black;
   font-weight: bold;
   text-align: center;
   white-space: normal;
@@ -35,8 +50,52 @@ td {
 }
 
 .resumo {
-  text-align: left !important;
-  align-items: right;
-  margin-top: 40px;
+  text-align: left;
   font-weight: bold;
+  height: 70%;
+  width: 100%;
+
+  /* evita que margin do h3 “vaze” para fora */
+  padding-top: 20px;       /* controla o espaço interno */
+  border: 1px solid transparent; /* também quebra o colapso */
+  /* ou alternativa: overflow: hidden; */
+}
+
+
+.resumoItem h3 {
+  margin: 0;            
+  padding: 7px;
+  position: relative;
+  top: -10px;          
+  font-size: 18px;
+}
+
+/* ==================== RESPONSIVO ==================== */
+@media (max-width: 768px) {
+  header {
+    height: 300px; 
+  }
+
+  titulo {
+    font-size: 22px; 
+  }
+
+  .resumoItem h3 {
+    font-size: 16px; 
+  }
+
+  table {
+    display: block;        
+    overflow-x: auto;
+    white-space: nowrap;   
+  }
+
+  th, td {
+    padding: 4px;          
+    font-size: 14px;       
+  }
+
+  body {
+    margin: 10px;          
+  }
 }

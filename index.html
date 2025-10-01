@@ -8,12 +8,18 @@
 </head>
 <body>
   <header>
-    <h1>Controle de Metas - 30 dias</h1>
-    <p><strong>Set - Out</strong></p>
-    <p>Sistema de recompensas: ao concluir <strong>70%</strong> das metas na semana, ganha uma recompensa 🎁</p>
   </header>
 
   <main>
+    <div class="titulo">
+        <h1>Controle de Metas - 30 dias</h1>
+        <p>
+            <strong>Set - Out</strong>
+        </p>
+        <p>
+            Sistema de recompensas: ao concluir <strong>70%</strong> das metas na semana, ganha uma recompensa 🎁
+        </p>
+    </div>
     <table id="tabelaMetas">
       <thead>
         <tr>
@@ -56,10 +62,16 @@
     </table>
 
     <section class="resumo">
-      <h3>Soma Total: <span id="somaTotal">0</span></h3>
-      <h3>Média Final: <span id="mediaFinal">0%</span></h3>
+      <div class="resumoItem">
+        <h3>Soma Total: <span id="somaTotal">0</span></h3>
+        <h3>Média Final: <span id="mediaFinal">0%</span></h3>
+      </div>
     </section>
   </main>
+
+  <footer>
+    <p>Desenvolvido por Amanda &copy; 2025</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
