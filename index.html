@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Controle de Metas</title>
+</head>
+<body>
+  <header>
+    <h1>Controle de Metas - 30 dias</h1>
+    <p><strong>Set - Out</strong></p>
+    <p>Sistema de recompensas: ao concluir <strong>70%</strong> das metas na semana, ganha uma recompensa 🎁</p>
+  </header>
+
+  <main>
+    <table id="tabelaMetas">
+      <thead>
+        <tr>
+          <th>Dia</th>
+          <th>Acordar às 6h</th>
+          <th>Café da Manhã</th>
+          <th>Uma fruta pela manhã</th>
+          <th>Foco no trabalho 9h-13h</th>
+          <th>Pausa almoço 13h</th>
+          <th>Uma fruta à tarde</th>
+          <th>Foco no trabalho 14h-18h</th>
+          <th>Exercícios 18h-19h</th>
+          <th>Café da tarde</th>
+          <th>Jantar leve</th>
+          <th>Ir deitar às 23h</th>
+          <th>Beber 1,5L água</th>
+          <th>Faculdade (estudo)</th>
+          <th>Total do dia</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>29/09</td>
+          <td><input type="checkbox" class="meta"></td>
+          <td><input type="checkbox" class="meta"></td>
+          <td><input type="checkbox" class="meta"></td>
+          <td><input type="checkbox" class="meta"></td>
+          <td><input type="checkbox" class="meta"></td>
+          <td><input type="checkbox" class="meta"></td>
+          <td><input type="checkbox" class="meta"></td>
+          <td><input type="checkbox" class="meta"></td>
+          <td><input type="checkbox" class="meta"></td>
+          <td><input type="checkbox" class="meta"></td>
+          <td><input type="checkbox" class="meta"></td>
+          <td><input type="checkbox" class="meta"></td>
+          <td><input type="checkbox" class="meta"></td>
+          <td class="totalDia">0</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <section class="resumo">
+      <h3>Soma Total: <span id="somaTotal">0</span></h3>
+      <h3>Média Final: <span id="mediaFinal">0%</span></h3>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

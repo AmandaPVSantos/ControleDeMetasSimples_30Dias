@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  text-align: center;
+  background-image: url('/img/background.png');
+  background-size:auto;     
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+th, td {
+  border: 1px solid #1a1919;
+  color: white;
+  padding: 6px;
+  text-align: center;
+}
+
+th, header, .resumo {
+  background-color: #a98e8e;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  white-space: normal;
+  word-wrap: break-word; 
+}
+td {
+  text-align: center;
+}
+
+.resumo {
+  text-align: left !important;
+  align-items: right;
+  margin-top: 40px;
+  font-weight: bold;
+}
